@@ -1,2 +1,1 @@
-# -n-t-p
-làm lại các bài tập
+#làm lại các bài tập
