@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 String value = adapter.getItem(position);
                 if(value.equals("Dương Ngọc Lệnh")){
                     Toast.makeText(MainActivity.this,"Đây là chủ danh bạ",Toast.LENGTH_SHORT).show();
-                }else if(value.equals("Nguyễn Hữu Hooài")){
+                }else if(value.equals("Nguyễn Hữu Hoài")){
                     Toast.makeText(MainActivity.this,"Đây là con bìm bịp",Toast.LENGTH_SHORT).show();
                 }else if (value.equals("Bùi Lê Đăng Khoa")){
                     Toast.makeText(MainActivity.this,"Đây là bạn đúp học",Toast.LENGTH_SHORT).show();
