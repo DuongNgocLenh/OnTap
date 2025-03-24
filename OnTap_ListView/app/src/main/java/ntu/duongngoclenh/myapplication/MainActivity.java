@@ -1,8 +1,11 @@
 package ntu.duongngoclenh.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
         tendt.add("Sony");
         tendt.add("Iphone");
         tendt.add("Xiaomi");
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>();
-        
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,tendt);
+        dthoai.setAdapter(adapter);
+        dthoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String value = adapter.getItem(position);
+                Toast.makeText(MainActivity.this,value,Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }
