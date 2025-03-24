@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String value = adapter.getItem(position);
-                if(adapter.equals("Dương Ngọc Lệnh")){
+                if(value.equals("Dương Ngọc Lệnh")){
                     Toast.makeText(MainActivity.this,"Đây là chủ danh bạ",Toast.LENGTH_SHORT).show();
-                }else if(adapter.equals("Nguyễn Hữu Hooài")){
+                }else if(value.equals("Nguyễn Hữu Hooài")){
                     Toast.makeText(MainActivity.this,"Đây là con bìm bịp",Toast.LENGTH_SHORT).show();
-                }else if (adapter.equals("Bùi Lê Đăng Khoa")){
+                }else if (value.equals("Bùi Lê Đăng Khoa")){
                     Toast.makeText(MainActivity.this,"Đây là bạn đúp học",Toast.LENGTH_SHORT).show();
-                }else if(adapter.equals("Bùi Thanh Pháp")){
+                }else if(value.equals("Bùi Thanh Pháp")){
                     Toast.makeText(MainActivity.this,"Đây là thanh niên nghiêm túc của năm",Toast.LENGTH_SHORT).show();
-                } else if (adapter.equals("Nguyễn Khánh Như")) {
+                } else if (value.equals("Nguyễn Khánh Như")) {
                     Toast.makeText(MainActivity.this,"Đây là bạn lười",Toast.LENGTH_SHORT).show();
                 }
             }
