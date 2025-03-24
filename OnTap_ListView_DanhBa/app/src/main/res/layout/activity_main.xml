@@ -5,14 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="clip_horizontal|clip_vertical"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/TimKiem"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_gravity="clip_horizontal"
+        android:gravity="center"
         android:inputType="text"
         android:text="Tìm kiếm bạn bè" />
+
+    <ListView
+        android:id="@+id/danhba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
