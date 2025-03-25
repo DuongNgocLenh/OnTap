@@ -74,11 +74,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="44dp"
-        android:text="Địa chỉ: Phường Vĩnh Hải"
+        android:text="Số điện thoại: 0946566760"
         android:textColor="#F44336"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Địa chỉ: Phường Vĩnh Hải"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageView
         android:id="@+id/imageView"
