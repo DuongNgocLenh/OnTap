@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#31AAC8"
     tools:context=".MainActivity">
 
     <Button
@@ -13,7 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="280dp"
+        android:backgroundTint="#2DC5BD"
         android:text="Câu 1"
+        android:textColor="#070707"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="280dp"
+        android:backgroundTint="#2DC5BD"
         android:text="Câu 2"
+        android:textColor="#070707"
         app:layout_constraintStart_toEndOf="@+id/btn1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +38,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#2DC5BD"
         android:text="Câu 3"
+        android:textColor="#040404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
@@ -43,7 +50,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#2DC5BD"
         android:text="Câu 4"
+        android:textColor="#050505"
         app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Chào mừng đến với trang chủ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="224dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Vui lòng ấn số câu "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
