@@ -54,6 +54,7 @@ public class Cau2 extends AppCompatActivity {
                 Toast.makeText(Cau2.this,"Đây là bạn lười",Toast.LENGTH_SHORT).show();
                 }else if(giatri.equals("Thông tin chủ danh bạ")){
                     Intent thongtin = new Intent(Cau2.this, Cau3.class);
+                    startActivity(thongtin);
                 }
             }
         });
