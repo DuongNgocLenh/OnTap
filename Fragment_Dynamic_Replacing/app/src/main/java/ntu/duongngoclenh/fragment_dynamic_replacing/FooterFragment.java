@@ -3,10 +3,12 @@ package ntu.duongngoclenh.fragment_dynamic_replacing;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -30,8 +32,18 @@ public class FooterFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        //Tim
         View v =  inflater.inflate(R.layout.fragment_footer, container, false);
+        //Tim dieu khien
+        Button nut1 = v.findViewById(R.id.button1);
+        Button nut2 = v.findViewById(R.id.button2);
+        Button nut3 = v.findViewById(R.id.button3);
+        FragmentManager fragmentManager = getParentFragmentManager();
+        nut1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragmentManager.beginTransaction().replace(R.id.)
+            }
+        });
         return v;
     }
 }
