@@ -41,7 +41,14 @@ public class FooterFragment extends Fragment {
         nut1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager.beginTransaction().replace(R.id.)
+                fragmentManager.beginTransaction().replace(R.id.fragmentContainerView_Content,new Blank1()).commit();
+            }
+        });
+        nut2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragmentContainerView_Content,new Blank2()).commit();
             }
         });
         return v;
